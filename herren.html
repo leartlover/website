@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herrenprodukte - Webshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="filter_sort.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-left">
+                
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <h1>Loro Piana</h1>
+            </div>
+            <div class="nav-right">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <nav class="sub-nav">
+            <a href="#">Damen</a>
+            <a href="herren.html">Herren</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="#">Art of Living</a>
+        </nav>
+    </header>
+    <main class="products-page">
+        <h2>Herrenprodukte</h2>
+        <div class="filters">
+            <div class="filter">
+                <label for="category-filter">Kategorie:</label>
+                <select id="category-filter">
+                    <option value="all">Alle</option>
+                    <option value="shoes">Schuhe</option>
+                    <option value="pants">Hosen</option>
+                    <option value="shirts">Hemden</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="price-sort">Sortieren nach:</label>
+                <select id="price-sort">
+                    <option value="default">Standard</option>
+                    <option value="price-asc">Preis: Aufsteigend</option>
+                    <option value="price-desc">Preis: Absteigend</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-grid" id="product-grid">
+            <!-- Dynamisch hinzugefügte Produkte -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Webshop</p>
+    </footer>
+</body>
+</html>

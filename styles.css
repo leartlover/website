@@ -1,0 +1,602 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navigation und Header */
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-left a, .nav-right a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 0.9em;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #b53737;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.logo h1 {
+    display: inline;
+    margin-left: 0.5em;
+    font-size: 1.5em;
+    color: #b53737;
+    vertical-align: middle;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 0.5em 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-nav a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    margin: 0 1em;
+    font-size: 0.9em;
+}
+
+.sub-nav a:hover {
+    color: #b53737;
+}
+
+.icon {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Hauptteil */
+main {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.products {
+    margin-bottom: 2em;
+}
+
+.products h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.product h3 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.product h3 a:hover {
+    color: #b53737;
+}
+
+.product p {
+    font-size: 1em;
+    color: #b53737;
+    margin-top: 0.5em;
+}
+
+.categories, .newsletter {
+    margin-bottom: 2em;
+}
+
+.categories h2, .newsletter h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+    text-align: center;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.categories li {
+    margin-bottom: 0.5em;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.categories a:hover {
+    color: #b53737;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter label {
+    font-size: 1em;
+    color: #333;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 0.75em 1.5em;
+    background-color: #b53737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+}
+
+.newsletter button:hover {
+    background-color: #a12e2e;
+}
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Georgia', serif;
+}
+
+/* Hauptteil */
+main.product-page {
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    background-color: #f9f9f9;
+}
+
+.image-buttons {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.image-buttons button {
+    padding: 0.5em;
+    background-color: #b53737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.image-buttons button:hover {
+    background-color: #a12e2e;
+}
+
+.product-details {
+    flex: 1;
+    max-width: 600px;
+}
+
+.product-details h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+}
+
+.product-material {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #b53737;
+    margin-bottom: 1em;
+}
+
+.product-color {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.color-options {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.product-description {
+    margin-top: 1em;
+}
+
+.product-description a {
+    color: #b53737;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-description a:hover {
+    text-decoration: underline;
+}
+
+.product-additional-info {
+    margin-top: 2em;
+}
+
+.product-additional-info details {
+    margin-bottom: 1em;
+}
+
+.product-additional-info summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+
+.btn-add-to-cart {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #b53737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #a12e2e;
+}
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Georgia', serif;
+}
+
+/* Warenkorbseite */
+.cart-page {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.cart-page h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+    text-align: center;
+}
+
+.cart-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.cart-item {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    background-color: #fff;
+}
+
+.cart-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.cart-item-details h3 {
+    font-size: 1.2em;
+
+
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.cart-item-details p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.cart-item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.cart-item-actions .btn-remove {
+    padding: 0.5em 1em;
+    background-color: #b53737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: 'Georgia', serif;
+}
+
+.cart-item-actions .btn-remove:hover {
+    background-color: #a12e2e;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+}
+
+.btn-checkout {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #b53737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-checkout:hover {
+    background-color: #a12e2e;
+}
+
+/* Kontaktseite */
+.contact-page {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.contact-page h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #f9f9f9;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    padding: 0.75em 1.5em;
+    background-color: #b53737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #a12e2e;
+}
+
+/* Produkte-Seite */
+.products-page {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.products-page h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: 'Georgia', serif;
+    color: #b53737;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.filter label {
+    font-size: 1em;
+    color: #333;
+    margin-right: 0.5em;
+}
+
+.filter select {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.product h3 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.product h3 a:hover {
+    color: #b53737;
+}
+
+.product p {
+    font-size: 1em;
+    color: #b53737;
+    margin-top: 0.5em;
+}

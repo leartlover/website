@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hose Pantaflat - Webshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-left">
+                
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <h1>Loro Piana</h1>
+            </div>
+            <div class="nav-right">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <nav class="sub-nav">
+            <a href="#">Damen</a>
+            <a href="herren.html">Herren</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="#">Art of Living</a>
+        </nav>
+    </header>
+    <main class="product-page">
+        <section class="product-images">
+            <img id="main-image" src="images/FAE8346_D0J2_MEDIUM.jpg.avif" alt="Hose Pantaflat">
+            <div class="image-buttons">
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM.jpg.avif')">Bild 1</button>
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM-2.jpg.avif')">Bild 2</button>
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM-3.jpg.avif')">Bild 3</button>
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM-4.jpg.avif')">Bild 4</button>
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM-5.jpg.avif')">Bild 5</button>
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM-6.jpg.avif')">Bild 6</button>
+                <button onclick="changeImage('images/FAE8346_D0J2_MEDIUM-7.jpg.avif')">Bild 7</button>
+            </div>
+        </section>
+        <section class="product-details">
+            <h2>Hose Pantaflat</h2>
+            <p class="product-material">Baumwolle, Leinen</p>
+            <p class="product-price">Preis: CHF 1,200.00</p>
+            <p class="product-color">Farbe: Dune Beige</p>
+            <div class="color-options">
+                <span class="color-option" style="background-color: #f5f5dc;" title="Dune Beige"></span>
+                <span class="color-option" style="background-color: #000000;" title="Schwarz"></span>
+            </div>
+            <form id="add-to-cart-form">
+                <label for="size">Größe:</label>
+                <select id="size" name="size">
+                    <option value="46">46</option>
+                    <option value="48">48</option>
+                    <option value="50">50</option>
+                    <option value="52">52</option>
+                </select>
+                <label for="quantity">Menge:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <input type="hidden" id="product-name" name="product-name" value="Hose Pantaflat">
+                <input type="hidden" id="product-price" name="product-price" value="1200.00">
+                <input type="hidden" id="product-image" name="product-image" value="FAE8346_D0J2_MEDIUM.jpg.avif">
+                <button type="submit" class="btn-add-to-cart">Zum Warenkorb hinzufügen</button>
+            </form>
+            <div class="product-description">
+                <p>Elegante Hose aus Baumwolle und Leinen, ideal für den Sommer. Diese Hose bietet einen hohen Tragekomfort und eine perfekte Passform.</p>
+                <a href="#">Mehr lesen</a>
+            </div>
+            <div class="product-additional-info">
+                <details>
+                    <summary>Produktdetails</summary>
+                    <p>Stilvolle Hose mit flachem Front-Design und Taschen. Verfügbar in verschiedenen Farben.</p>
+                </details>
+                <details>
+                    <summary>Pflegehinweise</summary>
+                    <p>Maschinenwäsche bei 30°C, nicht im Trockner trocknen.</p>
+                </details>
+                <details>
+                    <summary>Versand</summary>
+                    <p>Standardversand: 3-5 Werktage.</p>
+                </details>
+                <details>
+                    <summary>Zahlung und Sicherheit</summary>
+                    <p>Verschlüsselte Zahlung via Kreditkarte und PayPal.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Webshop</p>
+    </footer>
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
